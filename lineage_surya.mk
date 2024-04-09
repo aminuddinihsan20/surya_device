@@ -11,7 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from surya device
 $(call inherit-product, device/xiaomi/surya/device.mk)
 
-# Inherit some common Lineage stuff.
+# Inherit some common Matrixx stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 PRODUCT_NAME := lineage_surya
@@ -21,3 +21,15 @@ PRODUCT_MODEL := M2007J20CG
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Matrixx
+MATRIXX_BUILD_TYPE := Community
+MATRIXX_MAINTAINER := Inuo
+MATRIXX_CHIPSET := SM7150
+MATRIXX_BATTERY := 5160mah
+MATRIXX_DISPLAY := 1080x2400
+
+# Gapps
+WITH_GMS := true
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_ENABLE_BLUR := true
